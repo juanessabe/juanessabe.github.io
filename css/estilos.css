@@ -1,8 +1,7 @@
 
 
-/*selector de etiqueta header - section - article - nav */
 
-/*header { 
+/*header {
     background: white;
     color: #5E5E5E
 }*/
@@ -13,17 +12,16 @@
 /* selector de clase .*/
 /* .link */
 
-/* selector de id # */ 
+/* selector de id # */
 /* #portafolio*/
 /*body{
-   font-family: Raleway, sans-serif; 
+   font-family: Raleway, sans-serif;
 }*/
 /*h1 strong{
     color: red
 } Ponerle color diferente a todo lo que esté dentro de strong en el h1, en este caso es juanes*/
 body{
     margin: 0;
-    
 }
 
 .tittle-seccion-1{ /*PROYECTOS (LOS MÁS DESTACADOS)*/
@@ -36,28 +34,21 @@ body{
 }
 /* --------------- CABECERA------------------- */
 .header {
-    -webkit-box-shadow: -1px 2px 16px -2px rgba(194,177,194,1);
-    -moz-box-shadow: -1px 2px 16px -2px rgba(194,177,194,1);
-    box-shadow: -1px 2px 16px -2px rgba(194,177,194,1);
-    border-radius: 40px;
+    -webkit-box-shadow: 2px 7px 18px -9px rgba(0,0,0,0.10);
+    -moz-box-shadow: 2px 7px 18px -9px rgba(0,0,0,0.10);
+    box-shadow: 2px 7px 18px -9px rgba(0,0,0,0.10);
+    border-radius: 0px;
     background-color: #FFFFFF; /*Fondo del Header*/
     color: #5E5E5E; /*Color número del header*/
-    font-family: Raleway, sans-serif; 
-    height: 90px; /* alto */ 
+    height: 120px; /* alto */
     display: flex;
-    /*align-items: center;*/
+    align-items: center;
     justify-content: space-between;
 }
 
-.logo{
-    margin-top: 10px; 
-}
 
-ol,
-ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.logo{
+    margin-top: 10px;
 }
 
 figure {
@@ -65,29 +56,33 @@ figure {
     padding: 0;
 }
 
+.lista_ordenada{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  height: inherit;
+}
+
+.menu-center__botton{
+  height: inherit;
+  display: flex;
+}
+
 .menu{
     height: inherit;
 }
 
-.header ol{
-    display: flex;
-    height: inherit;
-}
-
-.header ol li{
-    height: inherit;
-}
-
-.header a {
-    color: #5E5E5E; /* Color del menú*/
+.menu__button {
+    color: black; /* Color del menú*/
     font-weight: 400; /* Grosor del menú*/
     font-size: 25px;
     text-decoration: none; /* subrayado del menú*/
-    font-family: Raleway, sans-serif; 
+    font-family: 'Staatliches', cursive;
     display: flex;
     align-items: center;
     height: inherit;
-    padding: 0 10px;
+    padding: 0 30px;
 }
 
 .container-welcome{
@@ -103,7 +98,7 @@ figure {
 /* --------------- SECCIÓN PRINCIPAL ------------------- */
 
 
-.hero { 
+.hero {
     background-image: url('../images/hero3.png');
     background-size: 4000px;
     background-repeat: no-repeat;
@@ -123,21 +118,21 @@ figure {
 }
 
 .tittle-welcome {
-    font-family: Raleway, sans-serif; 
+    font-family: Raleway, sans-serif;
     line-height: 53px;
     font-weight: 450;
     letter-spacing: -2px; /* Kerning*/
     font-size: 50px;
     color: white;
     margin-top: 23px;
-    margin-left: 150px; 
+    margin-left: 150px;
     /*font-style: oblique;*/
     /* text-transform: uppercase; si deseo cambiar el MAYUS de mi fuente*/
     /* text-decoration: underline; subrayados y otros decorados*/
 }
 /* --------------- ELEMENTOS DE PORTAFOLIO ------------------- */
 .portfolio{
-    background-color: #FAFAFA; 
+    background-color: #FAFAFA;
     padding: 20px;
 }
 
@@ -174,7 +169,7 @@ figure {
     font-family: 'Spectral SC', times, serif;
     font-size: 50px;/* Tamaño */
     font-weight: 700;
-    line-height: 60px; /*Espaciado Interlineado*/ 
+    line-height: 60px; /*Espaciado Interlineado*/
     letter-spacing: -4px; /* Kerning*/
     margin-right: -400px;
     margin-bottom: 0px;
@@ -210,7 +205,7 @@ figure {
     color: #5E5E5E;
     line-height: 25px;
     margin-right: -16px;
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
 }
 .project-1-url strong{
     font-weight: 700;
@@ -225,27 +220,27 @@ figure {
     font-family: Raleway, lato, sans-serif;
     font-size: 20px;
     font-weight: 400;
-    line-height: 30px; /*Espaciado vertical*/ 
+    line-height: 30px; /*Espaciado vertical*/
     color: black;
     margin-right: -300px;
 }
 
 
-.project-1-imageContainer { /*Reel*/ 
+.project-1-imageContainer { /*Reel*/
     width: -10px;
     margin-left: 50px;
     margin-top: 12px;
     box-sizing: border-box;
 }
 
-.project-2-imageContainer { /*Ingeniería de Sonrisas*/ 
+.project-2-imageContainer { /*Ingeniería de Sonrisas*/
     width: -10px;
     margin-left: 50px;
     margin-top: 12px;
     box-sizing: border-box;
 }
 
-.project-3-imageContainer { /*Doberman PD*/ 
+.project-3-imageContainer { /*Doberman PD*/
     width: -10px;
     margin-left: 50px;
     margin-top: 12px;
@@ -273,7 +268,7 @@ figure {
     border-radius: 40px;
     overflow: hidden;
     margin: 10px;
-    width: 480px; 
+    width: 480px;
     flex-shrink: 0;
     background-color: #FDF5FF;
     flex-wrap: wrap;
@@ -287,7 +282,7 @@ figure {
 
 .experiences-detail{
     margin: 20px 40px;
-    margin-top: -60px; 
+    margin-top: -60px;
     background-color: white;
     position: relative;
     padding: 20px;
@@ -330,8 +325,8 @@ figure {
     background-size: 9000px;
     background-repeat: no-repeat;
     color: white;
-    height: 300px;/* alto */ 
-    widows: 500px;/* ancho */ 
+    height: 300px;/* alto */
+    widows: 500px;/* ancho */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -390,8 +385,8 @@ figure {
 .form-email-tittle{
     font-family: 'Raleway black', lato, sans-serif;
     font-size: 30px;
-    margin-bottom: 40px; 
-    margin-top: 5px; 
+    margin-bottom: 40px;
+    margin-top: 5px;
 }
 
 .footer{
